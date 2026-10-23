@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio profissional de desenvolvimento web.">
+    <title>Meu Portfólio | Desenvolvedor</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body id="topo">
+
+    <header class="cabecalho">
+        <a href="#inicio" class="logo" aria-label="Ir para o início">
+            Meu<span>Portfólio.</span>
+        </a>
+
+        <button class="menu-toggle"
+                aria-label="Abrir menu"
+                aria-expanded="false"
+                aria-controls="menu">
+            ☰
+        </button>
+
+        <nav id="menu" class="menu" aria-label="Menu principal">
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre mim</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+        <button id="tema" class="botao-tema"
+                aria-label="Ativar modo escuro">
+            🌙
+        </button>
+    </header>
+
+    <main>
+        <section id="inicio" class="inicio">
+            <div class="inicio-texto">
+                <p id="saudacao" class="destaque">
+                    Olá! Seja bem-vindo(a).
+                </p>
+
+                <h1>Olá, sou <span>Seu Nome</span></h1>
+
+                <h2>Estudante de tecnologia</h2>
+
+                <p>
+                    Estou aprendendo desenvolvimento de software
+                    e criando projetos para desenvolver minhas
+                    habilidades na área de tecnologia.
+                </p>
+
+                <a href="#projetos" class="botao">
+                    Conheça meus projetos
+                </a>
+            </div>
+
+            <div class="avatar" role="img"
+                 aria-label="Ícone representando um desenvolvedor">
+                💻
+            </div>
+        </section>
+
+        <section id="sobre" class="secao">
+            <h2>Sobre mim</h2>
+
+            <p>
+                Sou estudante e tenho interesse em tecnologia,
+                programação e desenvolvimento de sistemas.
+                Busco aprender novas ferramentas, melhorar
+                minha lógica de programação e construir projetos
+                que ajudem a resolver problemas do dia a dia.
+            </p>
+        </section>
+
+        <section id="habilidades" class="secao">
+            <h2>Minhas habilidades</h2>
+
+            <div class="grade habilidades">
+                <article class="cartao">
+                    <h3>HTML</h3>
+                    <p>Estruturação de páginas web.</p>
+                </article>
+
+                <article class="cartao">
+                    <h3>CSS</h3>
+                    <p>Estilização, Flexbox, Grid e responsividade.</p>
+                </article>
+
+                <article class="cartao">
+                    <h3>JavaScript</h3>
+                    <p>Aprendendo interatividade e lógica.</p>
+                </article>
+
+                <article class="cartao">
+                    <h3>Python e SQL</h3>
+                    <p>Estudos de programação e bancos de dados.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="projetos" class="secao">
+            <h2>Meus projetos</h2>
+
+            <div class="grade projetos">
+                <article class="cartao">
+                    <h3>Sistema de Biblioteca</h3>
+                    <p>
+                        Sistema desenvolvido com Flask, HTML,
+                        CSS e SQLite para cadastrar e consultar
+                        livros, autores e categorias.
+                    </p>
+                    <span class="etiqueta">Python • Flask • SQLite</span>
+                </article>
+
+                <article class="cartao">
+                    <h3>SafeConnect</h3>
+                    <p>
+                        Projeto de aplicativo com foco em
+                        segurança digital, privacidade e
+                        proteção de dados pessoais.
+                    </p>
+                    <span class="etiqueta">Projeto acadêmico</span>
+                </article>
+
+                <article class="cartao">
+                    <h3>Meu terceiro projeto</h3>
+                    <p>
+                        Adicione aqui outro projeto real
+                        desenvolvido durante o curso,
+                        explicando sua finalidade e tecnologias.
+                    </p>
+                    <span class="etiqueta">Personalize esta seção</span>
+                </article>
+            </div>
+        </section>
+
+        <section id="contato" class="secao">
+            <h2>Entre em contato</h2>
+
+            <p>
+                Preencha o formulário para deixar uma mensagem.
+            </p>
+
+            <form id="form-contato">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome"
+                       autocomplete="name" required maxlength="80">
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email"
+                       autocomplete="email" required maxlength="150">
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem"
+                          rows="5" required maxlength="1000"></textarea>
+
+                <label class="consentimento">
+                    <input type="checkbox" id="consentimento"
+                           name="consentimento" required>
+                    Concordo com o uso dos meus dados
+                    para responder a esta mensagem.
+                </label>
+
+                <button type="submit" class="botao">
+                    Enviar mensagem
+                </button>
+
+                <p id="status-form" role="status"
+                   aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>
+            © <span id="ano"></span> Seu Nome.
+            Todos os direitos reservados.
+        </p>
+
+        <a href="#topo">Voltar ao topo ↑</a>
+    </footer>
+
+</body>
+</html>
